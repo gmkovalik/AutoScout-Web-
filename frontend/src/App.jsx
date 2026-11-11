@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ScatterChart, Scatter, ZAxis, BarChart, Bar } from 'recharts';
-import { Activity, Home, Settings, Users, CalendarDays, ChartNoAxesCombined, Trophy, Swords, ClipboardList, Radio, Search, RefreshCw, Download, Upload, ChevronRight, Menu, X, Info, ExternalLink, Target, Flag, BookOpen, SlidersHorizontal, Save, CircleHelp } from 'lucide-react';
+import { Activity, Home as House, Settings, Users, CalendarDays, ChartNoAxesCombined, Trophy, Swords, ClipboardList, Radio, Search, RefreshCw, Download, Upload, ChevronRight, Menu, X, Info, ExternalLink, Target, Flag, BookOpen, SlidersHorizontal, Save, CircleHelp } from 'lucide-react';
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 const SESSION_ID = (() => { let id = localStorage.getItem('autoscout-session-id'); if (!id) { id = (crypto.randomUUID ? crypto.randomUUID() : `as-${Date.now()}-${Math.random().toString(36).slice(2)}`); localStorage.setItem('autoscout-session-id', id); } return id; })();
